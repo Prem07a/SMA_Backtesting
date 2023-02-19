@@ -87,7 +87,7 @@ class SMABacktester():
         raw = raw.loc[self.start:self.end].copy()
         raw['returns'] = np.log(raw / raw.shift(1))
         self.data = raw
-        return raw
+       
     
     def prepare_data(self):
         """
