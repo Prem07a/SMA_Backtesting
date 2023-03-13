@@ -1,29 +1,31 @@
 # SMA_Backtesting
-This is a Python backtester for a simple moving average (SMA) crossover trading strategy. The backtester calculates the performance metrics of the strategy and visualizes the results.
+This is a Python back tester for a simple moving average (SMA) crossover trading strategy. The backtested calculates the performance metrics of the strategy and visualizes the results.
 
 ## REQUIREMENTS:
-To use this backtester, you need:
+To use this backtest, you need:
 1. A folder named data in the same location as your Python code file.
 
-2. A CSV file named stock.csv in the data folder. The file should contain at least two columns: timestamp and close. The timestamp column should contain dates in the format yyyy-mm-dd and the close column should contain the closing prices of the stock.
+2. A CSV file named stock.csv is in the data folder. The file should contain at least two columns: timestamp and close. The timestamp column should contain dates in the format yyyy-mm-dd and the close column should contain the closing prices of the stock.
 
 ## INSTALLATION:
-To use this backtester, simply download the SMABacktester.py file and save it in the same location as your Python code file. Then, import the SMABacktester class in your code.<br>
+To use this back tester, simply download the SMABacktester.py file and save it in the same location as your Python code file. Then, import the SMABacktester class in your code.<br>
 or <br>
 else clone the repo:
 ```
 git clone https://github.com/Prem07a/SMA_Backtesting
 ```
-Make a new folder inside in the same location of that of SMA_Backtesting and name it as data
+Make a new folder inside in the same location as that of SMA_Backtesting and name it as data
 
-Add the stock.csv file in that folder
+Add the stock.csv file to that folder
+### Note:
+You can add any stock data just put it in the data folder and name it stock.csv
 ## USAGE
 
 Import the SMABACKTESTER:
 ```
 from SMABacktester import SMABacktester
 ```
-To use the backtester, create an instance of the SMABacktester class and pass the following parameters:
+To use the back tester, create an instance of the SMABacktester class and pass the following parameters:
 
 * symbol: the stock symbol to be backtested
 * SMA_S: the short-term moving average window size
@@ -43,9 +45,9 @@ The SMABacktester class has the following methods:
     
     test_strategy(): backtests the strategy and calculates the performance metrics
     
-    plot_results(): visualizes the stock price, cumulative returns, and cumulative strategy returns
+    plot_results(): visualize the stock price, cumulative returns, and cumulative strategy returns
     
-    optimize_parameters(SMA_S_range, SMA_L_range): finds the optimal short-term and long-term moving average window sizes by exhaustively testing all combinations
+    optimize_parameters(SMA_S_range, SMA_L_range): find the optimal short-term and long-term moving average window sizes by exhaustively testing all combinations
     
 ## EXAMPLE USAGE:
 
