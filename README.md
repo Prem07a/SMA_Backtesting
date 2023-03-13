@@ -17,7 +17,7 @@ git clone https://github.com/Prem07a/SMA_Backtesting
 Make a new folder inside in the same location of that of SMA_Backtesting and name it as data
 
 Add the stock.csv file in that folder
-# USAGE
+## USAGE
 
 Import the SMABACKTESTER:
 ```
