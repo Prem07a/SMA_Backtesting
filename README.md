@@ -56,3 +56,5 @@ backtester = SMABacktester(symbol='SBI', SMA_S=50, SMA_L=200, start='Any', end='
 backtester.test_strategy()
 backtester.plot_results()
 ```
+
+*    Note: This is only for Educational Purpose.
